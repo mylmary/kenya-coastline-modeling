@@ -1,6 +1,4 @@
 # coastline-modelingindian-ocean-coastline
-Solving Partial Differential Equations/Wave propagation near the shore
-
 Create a clean Python environment for your project:bashconda create -n transolver_coast python=3.10
 conda activate transolver_coast
 Use code with caution.Step 2: Install PyTorch (CPU Mode)Since the Intel Mac cannot leverage standard CUDA acceleration, install the CPU-optimized version of PyTorch:bashconda install pytorch torchvision torchaudio cpuonly -c pytorch
