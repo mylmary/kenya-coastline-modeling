@@ -1,18 +1,18 @@
 ## Create a clean Python environment for your project:
 
-bash
+
 conda create -n transolver_coast python=3.10
 conda activate transolver_coast
 
 
 ## Step 2: Install PyTorch (CPU Mode)Since the Intel Mac cannot leverage standard CUDA acceleration, install the CPU-optimized version of PyTorch:
 
-bash
+
 conda install pytorch torchvision torchaudio cpuonly -c pytorch
 
 ## Step 3: Clone the Repository & Install DependenciesClone the core code and install standard scientific computing libraries for processing the geographic meshes:
 
-bash
+
 git clone https://github.com
 cd Transolver_plus
 pip install numpy pandas matplotlib scipy scikit-learn
@@ -24,7 +24,9 @@ pip install numpy pandas matplotlib scipy scikit-learn
 
 ##Install geospatial packages to handle regional boundaries:
 
-bash
+
 pip install geopandas shapely
 
 ##Download your base spatial vectors from the Kenya Coastal Data - RCoE Geoportal.Sample the shoreline vector into a series of X, Y coordinates (and Z for elevation if you have a Digital Elevation Model). This point cloud will match the (Batch, N, Channel) dimensions that the Physics-Attention layers expect.
+
+
